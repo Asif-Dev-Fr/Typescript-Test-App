@@ -1,0 +1,19 @@
+.homepage .searchBar {
+  display: flex;
+  justify-content: center;
+}
+
+.homepage .searchBar .input-group {
+  width: 90%;
+}
+
+
+.homepage .forecastButton {
+  text-align: center;
+}
+
+.homepage .forecastButton button {
+  margin-top: 15px;
+  width: 200px;
+  text-transform: capitalize;
+}

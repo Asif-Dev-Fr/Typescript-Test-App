@@ -1,0 +1,36 @@
+.nav {
+    height: 40px;
+}
+
+.nav .link {
+  display: flex;
+  margin-left: 25px;
+}
+
+.nav .link .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav .link .nav-item a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 15px;
+}
+
+.nav .link .nav-item a:hover {
+  color: rgb(241, 110, 50);
+}
+
+.dropdown-menu {
+  width: 100px !important;
+}
+
+.dropdown-menu a {
+  color: black !important;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  color: rgb(241, 110, 50) !important;
+}
