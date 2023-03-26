@@ -28,7 +28,6 @@ const Homepage = () => {
 
   // Methods :
   const selectCity = (value: string) => {
-    console.log(value);
     setCity(value);
   };
 
@@ -64,7 +63,10 @@ const Homepage = () => {
             })
             : alert("Try again")
         )
-        .catch((error) => alert("This city does not exist"));
+        .catch((error) => {
+          let messsage = `This city does not exist (${error.message})`
+          alert(messsage)
+        });
 
       // let forcast = await axios.post(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${process.env.REACT_APP_API_KEY}`);
     }
@@ -76,11 +78,11 @@ const Homepage = () => {
       {weatherData.dataExist === true && (
         <CurrentWeather weatherData={weatherData} />
       )}
-      <div className="forecastButton">
+      {/* <div className="forecastButton">
         <Link to={"/forecast/" + city}>
           <Button variant="dark">See forecast</Button>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
